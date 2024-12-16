@@ -1,5 +1,6 @@
 package com.example.uptodo.receiver;
 
+import android.annotation.SuppressLint;
 import android.app.PendingIntent;
 import android.content.BroadcastReceiver;
 import android.content.Context;
@@ -37,6 +38,7 @@ public class ReminderReceiver extends BroadcastReceiver {
         }
     }
 
+    @SuppressLint("MissingPermission")
     private void showNotification(Context context, int taskId, String title, String message) {
         // Tạo Intent để mở MainActivity khi người dùng nhấp vào thông báo
         Intent intent = new Intent(context, MainActivity.class);

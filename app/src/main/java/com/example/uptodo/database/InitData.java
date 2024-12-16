@@ -3,7 +3,7 @@ package com.example.uptodo.database;
 public class InitData {
     public static final String INSERT_USERS = "INSERT INTO users (username, email, password) VALUES " +
             "('thang', 'thang04@gmail.com', '123456'), " +
-            "('chuson', 'chuson@gmail.com', '123456');";
+            "('anhtuan', 'tuan@gmail.com', '123456');";
 
     public static final String INSERT_CATEGORIES = "INSERT INTO categories (name, user_id) VALUES " +
             "('Công việc', 1), " +
