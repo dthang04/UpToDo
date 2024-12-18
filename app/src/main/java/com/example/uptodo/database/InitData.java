@@ -11,7 +11,6 @@ public class InitData {
 
     public static final String INSERT_TAGS = "INSERT INTO tags (name, color, user_id) VALUES " +
             "('Urgent', 'red', 1), " +
-            "('Quan trọng', 'yellow', 2), " +
             "('Low Priority', 'blue', 1);";
 
     public static final String INSERT_TASKS = "INSERT INTO tasks (title, note, due_date, user_id, category_id, is_completed) VALUES " +
