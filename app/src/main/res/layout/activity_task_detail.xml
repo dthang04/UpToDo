@@ -28,15 +28,6 @@
             android:layout_height="match_parent"
             android:layout_weight="1" />
 
-        <ImageButton
-            android:layout_width="32dp"
-            android:layout_height="32dp"
-            android:background="@null"
-            android:contentDescription="Repeat"
-            android:src="@drawable/baseline_repeat_24"
-            android:visibility="gone"
-            app:tint="@color/textColor" />
-
     </LinearLayout>
 
     <androidx.constraintlayout.widget.ConstraintLayout

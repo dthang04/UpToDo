@@ -1,27 +1,17 @@
 package com.example.uptodo.activity;
 
-import android.app.DatePickerDialog;
-import android.app.Dialog;
+
 import android.app.NotificationChannel;
 import android.app.NotificationManager;
-import android.app.TimePickerDialog;
 import android.content.Intent;
 import android.content.SharedPreferences;
-import android.graphics.Color;
-import android.graphics.drawable.ColorDrawable;
 import android.os.Bundle;
 import android.view.Gravity;
 import android.view.MenuItem;
-import android.view.ViewGroup;
-import android.view.Window;
-import android.widget.EditText;
-import android.widget.ImageView;
-import android.widget.LinearLayout;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.ActionBarDrawerToggle;
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
@@ -31,23 +21,17 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
 
 import com.example.uptodo.R;
-import com.example.uptodo.dao.TaskDAO;
 import com.example.uptodo.fragments.AboutFragment;
 import com.example.uptodo.fragments.CategoryFragment;
 import com.example.uptodo.fragments.HomeFragment;
-import com.example.uptodo.fragments.CalendarFragment;
 import com.example.uptodo.fragments.PersonalFragment;
 import com.example.uptodo.fragments.SettingFragment;
 import com.example.uptodo.fragments.ShareFragment;
 import com.example.uptodo.fragments.TaskBottomDialogFragment;
-import com.example.uptodo.model.Task;
 import com.example.uptodo.objects.UserSession;
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.navigation.NavigationView;
-
-import java.util.Calendar;
-import java.util.Date;
 
 public class MainActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     private DrawerLayout drawerLayout;
@@ -82,9 +66,6 @@ public class MainActivity extends AppCompatActivity implements NavigationView.On
                 return true;
             } else if (itemId == R.id.bottom_category) {
                 openFragment(new CategoryFragment());
-                return true;
-            } else if (itemId == R.id.bottom_calendar) {
-                openFragment(new CalendarFragment());
                 return true;
             } else if (itemId == R.id.bottom_profile) {
                 openFragment(new PersonalFragment());

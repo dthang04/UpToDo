@@ -50,7 +50,8 @@
                     android:layout_marginEnd="20dp"
                     android:background="@android:color/transparent"
                     app:labelVisibilityMode="labeled"
-                    app:menu="@menu/bottom_menu" />
+                    app:menu="@menu/bottom_menu"
+                    android:paddingEnd="24dp"/>
 
             </com.google.android.material.bottomappbar.BottomAppBar>
 

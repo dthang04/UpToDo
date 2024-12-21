@@ -15,11 +15,10 @@
 
     <item
         android:title=""
-        android:enabled="true"/>
+        android:enabled="false"/>
     <item
-        android:id="@+id/bottom_calendar"
-        android:title="Lịch"
-        android:icon="@drawable/baseline_calendar_month_24" />
+        android:title=""
+        android:enabled="false"/>
     <item
         android:id="@+id/bottom_profile"
         android:title="Cá nhân"
